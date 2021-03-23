@@ -24,3 +24,4 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 # 20210323_kuramoto
 # 20210323_kuramoto
+# 20210324_kuramoto
