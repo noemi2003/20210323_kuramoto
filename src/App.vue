@@ -14,17 +14,18 @@ export default {
   data() {
     return{
       number:"",
-      address:"",
+      address:""
     };
   },
   methods:{
     async click(){
      const items = await axios.get(`https://apis.postcode-jp.com/api/v4/postcodes/${this.number}?apiKey=37mFixiujYdg2EkSwSOPMZaOoxNDzOALULABg07`);
 
-     this.address = items.data
+     this.address = items.data[0]["allAddress"]
     }
 
   }
   }
   
 </script>
+
